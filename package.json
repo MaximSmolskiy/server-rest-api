@@ -1,0 +1,39 @@
+{
+  "name": "server-rest-api",
+  "version": "1.0.0",
+  "description": "server REST API",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon --ignore db.json app.js",
+    "start": "node app.js",
+    "test": "xo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaximSmolskiy/server-rest-api.git"
+  },
+  "keywords": [
+    "server",
+    "REST",
+    "API"
+  ],
+  "author": "Maxim Smolskiy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaximSmolskiy/server-rest-api/issues"
+  },
+  "homepage": "https://github.com/MaximSmolskiy/server-rest-api#readme",
+  "dependencies": {
+    "config": "^3.3.2",
+    "express": "^4.17.1",
+    "express-joi-validation": "^5.0.0",
+    "http-status-codes": "^2.1.4",
+    "joi": "^17.2.1",
+    "lodash-id": "^0.14.0",
+    "lowdb": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.5",
+    "xo": "^0.34.0"
+  }
+}
