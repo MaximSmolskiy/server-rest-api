@@ -1,31 +1,32 @@
+const Boom = require('@hapi/boom');
 const db = require('./database');
 
 class EmployeesService {
 	async getEmployeesList() {
-		const employeesList = await db.then(db => {
-			return db.get('employees').value();
-		});
-		return employeesList;
+		return db.then(db => db.get('employees').value());
 	}
 
 	async saveEmployee(employee) {
-		const newEmployee = await db.then(db => {
-			return db.get('employees').insert(employee).write();
-		});
-		return newEmployee.id;
+		return db.then(db => db.get('employees').insert(employee).write());
 	}
 
-	async getEmployeeProfile(employeeId) {
-		const employee = await db.then(db => {
-			return db.get('employees').getById(employeeId).value();
-		});
+	async getByIdEmployee(employeeId) {
+		const employee = await db.then(db => db.get('employees').getById(employeeId).value());
+
+		if (!employee) {
+			throw Boom.notFound();
+		}
+
 		return employee;
 	}
 
 	async deleteEmployee(employeeId) {
-		const employee = await db.then(db => {
-			return db.get('employees').removeById(employeeId).write();
-		});
+		const employee = await db.then(db => db.get('employees').removeById(employeeId).write());
+
+		if (!employee) {
+			throw Boom.notFound();
+		}
+
 		return employee;
 	}
 }
