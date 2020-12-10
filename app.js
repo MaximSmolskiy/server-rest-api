@@ -1,21 +1,19 @@
 const express = require('express');
 require('express-async-errors');
 const app = express();
-const {path, hostname, port} = require('./config');
+const {path, hostname, port} = require('./configuration/config');
 const routes = require('./routes');
-const StatusCodes = require('http-status-codes');
+const Boom = require('@hapi/boom');
 
 app.use(express.json());
 app.use(path, routes);
 
 app.use(async (err, req, res, next) => {
-	if (err.isBoom) {
+	if (Boom.isBoom(err)) {
 		const payload = err.output.payload;
-		res.status(payload.statusCode).json({message: payload.message});
-	} else if (err.isJoi) {
-		res.status(StatusCodes.BAD_REQUEST).json({message: err.toString()});
-	} else if (err.error && err.error.isJoi) {
-		res.status(StatusCodes.BAD_REQUEST).json({message: err.error.toString()});
+		res
+			.status(payload.statusCode)
+			.json({message: payload.message});
 	} else {
 		next(err);
 	}

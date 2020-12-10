@@ -1,24 +1,30 @@
 const express = require('express');
 const router = new express.Router();
+const validateAsync = require('../validation/validate-async');
+const employeeIdSchema = require('../validation/schemas/employee-id-schema');
 const EmployeesController = require('../controllers/employees-controller');
-const expressJoiValidation = require('express-joi-validation');
-const validator = expressJoiValidation.createValidator({passError: true});
-const {employeeIdSchema, employeeSchema} = require('./employee-schemas');
+const checkToken = require('../authentication/check-token');
+const getEmployeesListQuerySchema = require('../validation/schemas/get-employees-list-query-schema');
+const employeeSchema = require('../validation/schemas/employee-schema');
 
-router.param('employeeId', async (req, res, next, employeeId) => {
-	const value = await employeeIdSchema.validateAsync({employeeId});
-	req.employeeId = value.employeeId;
-	next();
-});
+router.param('employeeId',
+	async (req, res, next, employeeId) => validateAsync({employeeId}, employeeIdSchema, next));
 
 router
 	.route('/:employeeId')
 	.get(EmployeesController.getByIdEmployee)
-	.delete(EmployeesController.deleteEmployee);
+	.put(checkToken,
+		async (req, res, next) => validateAsync(req.body, employeeSchema, next),
+		EmployeesController.updateEmployee)
+	.delete(checkToken,
+		EmployeesController.deleteEmployee);
 
 router
 	.route('/')
-	.get(EmployeesController.getEmployeesList)
-	.post(validator.body(employeeSchema), EmployeesController.saveEmployee);
+	.get(async (req, res, next) => validateAsync(req.query, getEmployeesListQuerySchema, next),
+		EmployeesController.getEmployeesList)
+	.post(checkToken,
+		async (req, res, next) => validateAsync(req.body, employeeSchema, next),
+		EmployeesController.saveEmployee);
 
 module.exports = router;

@@ -1,6 +1,7 @@
 {
   "rules": {
     "import/no-unassigned-import": "off",
+    "unicorn/catch-error-name":  "off",
     "unicorn/prevent-abbreviations": "off"
   }
 }

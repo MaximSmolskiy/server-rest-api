@@ -1,0 +1,5 @@
+{
+  "sortField": "salary",
+  "pageSize": 25,
+  "expiresIn": "5 minutes"
+}

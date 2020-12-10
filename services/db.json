@@ -1,3 +1,295 @@
 {
-  "employees": []
+  "employees": [
+    {
+      "name": "Maxim",
+      "surname": "Smolskiy",
+      "date": "1995-05-24",
+      "position": "Senior Software Engineer",
+      "salary": 20200,
+      "id": "ec09a0fe-9f96-4af4-a9bc-0700d7376552"
+    },
+    {
+      "name": "Maxim",
+      "surname": "Smolskiy",
+      "date": "1995-05-24",
+      "position": "Senior Software Engineer",
+      "salary": 20300,
+      "id": "24fa4f74-0441-4d6b-84a1-8abd385e19b6"
+    },
+    {
+      "name": "Maxim",
+      "surname": "Smolskiy",
+      "date": "1995-05-24",
+      "position": "Senior Software Engineer",
+      "salary": 25000,
+      "id": "13be95a8-038a-4b6a-a54f-813386efef41"
+    },
+    {
+      "name": "hi",
+      "surname": "there",
+      "date": "1995-05-24",
+      "position": "Senior Software Engineer",
+      "salary": 5050,
+      "id": "994cc13b-c603-4419-b2bc-b26490efcaf3"
+    },
+    {
+      "name": "gfddgfgf",
+      "surname": "Smolskiy",
+      "date": "1995-05-24",
+      "position": "Senior Software Engineer",
+      "salary": 20040,
+      "id": "2fa31e80-037f-4727-915b-d448e29bc307"
+    },
+    {
+      "name": "gfddgfgf",
+      "surname": "Smolskiy",
+      "date": "1995-05-24",
+      "position": "Senior Software Engineer",
+      "salary": 20300,
+      "id": "698ddca7-a377-4633-84f7-83426f2e8277"
+    },
+    {
+      "name": "hi",
+      "surname": "there",
+      "date": "1995-05-24",
+      "position": "Senior Software Engineer",
+      "salary": 10200,
+      "id": "281fb32b-7c5c-41ec-8035-2d3cd860b4e0"
+    },
+    {
+      "name": "Maxim",
+      "surname": "Smolskiy",
+      "date": "05-24-1995",
+      "position": "Senior Software Engineer",
+      "salary": 300,
+      "id": "6d6c34f9-a4f1-4d6e-8bed-50a66d8248cf"
+    },
+    {
+      "name": "Maxim",
+      "surname": "Smolskiy",
+      "date": "05/24/1995",
+      "position": "Senior Software Engineer",
+      "salary": 20020,
+      "id": "fa060ab9-2622-4d5e-ba6e-f3831a7fcb8b"
+    },
+    {
+      "name": "Maxim",
+      "surname": "Smolskiy",
+      "date": "24.05.1995",
+      "position": "Senior Software Engineer",
+      "salary": 2000,
+      "id": "230bba08-f7f9-4a3e-b5a6-b6c2f45634ec"
+    },
+    {
+      "name": "gfddgfgf",
+      "surname": "Smolskiy",
+      "date": "24.05.1995",
+      "position": "Senior Software Engineer",
+      "salary": 2000,
+      "id": "d46192df-ecac-4a5f-9c03-b28bdd41fca6"
+    },
+    {
+      "name": "gfddgfgf",
+      "surname": "Smolskiy",
+      "date": "31.05.1995",
+      "position": "Senior Software Engineer",
+      "salary": 2000,
+      "id": "7d06d611-79d9-4608-8a20-ec667d07b531"
+    },
+    {
+      "name": "gfddgfgf",
+      "surname": "Smolskiy",
+      "date": "31.05.1000",
+      "position": "Senior Software Engineer",
+      "salary": 2000,
+      "id": "901e5899-42c2-4ee7-a4bf-6a0ba1097dcd"
+    },
+    {
+      "name": "gfddgfgf",
+      "surname": "Smolskiy",
+      "date": "31.05.3000",
+      "position": "Senior Software Engineer",
+      "salary": 2000,
+      "id": "c86c9588-98c9-4d66-a7a2-4a846b241999"
+    },
+    {
+      "name": "gfddgfgf",
+      "surname": "Smolskiy",
+      "date": "31.12.3000",
+      "position": "Senior Software Engineer",
+      "salary": 2000,
+      "id": "e124206d-cbd4-4469-a343-21df84b9ece3"
+    },
+    {
+      "name": "gfddgfgf",
+      "surname": "Smolskiy",
+      "date": "31.12.3000",
+      "position": "Senior Software Engineer",
+      "salary": "2000",
+      "id": "fdbba01b-adb5-40cf-a76c-180a3bce396d"
+    },
+    {
+      "name": "gfddgfgf",
+      "surname": "Smolskiy",
+      "date": "31.12.3000",
+      "position": "Senior Software Engineer",
+      "salary": "2000",
+      "id": "68fa9222-760d-4ca7-a30b-070d83f0e1a0"
+    },
+    {
+      "name": "gfddgfgf",
+      "surname": "Smolskiy",
+      "date": "31.12.3000",
+      "position": "Senior Software Engineer",
+      "salary": "2000",
+      "id": "31bb8044-b44d-4053-8f64-4cc9700995d4"
+    },
+    {
+      "name": "gfddgfgf",
+      "surname": "Smolskiy",
+      "date": "31.12.3000",
+      "position": "Senior Software Engineer",
+      "salary": "2000",
+      "id": "193e966b-e243-468d-959f-aca4bb3a4f2d"
+    },
+    {
+      "name": "gfddgfgf",
+      "surname": "Smolskiy",
+      "date": "31.12.3000",
+      "position": "Senior Software Engineer",
+      "salary": "2000",
+      "id": "de74ad1f-3e79-4d5d-a41a-3b963eb434a1"
+    },
+    {
+      "name": "gfddgfgf",
+      "surname": "Smolskiy",
+      "date": "31.12.3000",
+      "position": "Senior Software Engineer",
+      "salary": "2000",
+      "id": "1f20622b-97ad-4e12-8d10-e9adb32a3d6c"
+    },
+    {
+      "name": "gfddgfgf",
+      "surname": "Smolskiy",
+      "date": "31.12.3000",
+      "position": "Senior Software Engineer",
+      "salary": "2000",
+      "id": "f1b252b0-c881-46f8-94ce-11d66883184f"
+    },
+    {
+      "name": "gfddgfgf",
+      "surname": "Smolskiy",
+      "date": "31.12.3000",
+      "position": "Senior Software Engineer",
+      "salary": "2000",
+      "id": "286e3114-4a38-4e28-89fc-e78ffe1f3b05"
+    },
+    {
+      "name": "gfddgfgf",
+      "surname": "Smolskiy",
+      "date": "31.12.3000",
+      "position": "Senior Software Engineer",
+      "salary": "2000",
+      "id": "5ece2138-7393-46ed-95ff-b0103e7246f6"
+    },
+    {
+      "name": "gfddgfgf",
+      "surname": "Smolskiy",
+      "date": "31.12.3000",
+      "position": "Senior Software Engineer",
+      "salary": "2000",
+      "id": "44f39663-2e72-4df3-944b-88e3ce5162c4"
+    },
+    {
+      "name": "gfddgfgf",
+      "surname": "Smolskiy",
+      "date": "31.12.3000",
+      "position": "Senior Software Engineer",
+      "salary": "2000",
+      "id": "6827ee58-f8d4-4ad6-9bdb-ca64c0b9ea70"
+    },
+    {
+      "body": {
+        "name": "gfddgfgf",
+        "surname": "Smolskiy",
+        "date": "3000-12-30T21:00:00.000Z",
+        "position": "Senior Software Engineer",
+        "salary": 2000
+      },
+      "id": "fade9178-35e0-4af1-9b0a-c2254ab0fe6f"
+    },
+    {
+      "body": {
+        "name": "gfddgfgf",
+        "surname": "Smolskiy",
+        "date": "3000-12-30T21:00:00.000Z",
+        "position": "Senior Software Engineer",
+        "salary": 2000
+      },
+      "id": "d981ee66-c7e1-4255-9f93-a608e7a2a6af"
+    },
+    {
+      "name": "gfddgfgf",
+      "surname": "Smolskiy",
+      "date": "3000-12-30T21:00:00.000Z",
+      "position": "Senior Software Engineer",
+      "salary": 2000,
+      "id": "988ebabf-fb90-4618-b2b2-ff5e1714fc79"
+    },
+    {
+      "name": "gfddgfgf",
+      "surname": "Smolskiy",
+      "date": "3000-12-30T21:00:00.000Z",
+      "position": "Senior Software Engineer",
+      "salary": 2000,
+      "id": "66d5b75e-4c4e-45de-900a-27c5820e44fb"
+    },
+    {
+      "name": "gfddgfgf",
+      "surname": "Smolskiy",
+      "date": "31.12.3000",
+      "position": "Senior Software Engineer",
+      "salary": 2000,
+      "id": "8d388101-d7be-4593-b99f-cdcf0b18bfe9"
+    },
+    {
+      "name": "gfddgfgf",
+      "surname": "Smolskiy",
+      "date": "31.12.3000",
+      "position": "Senior Software Engineer",
+      "salary": "2000",
+      "id": "a32413ff-56f6-4990-ad01-6db269451cdd"
+    },
+    {
+      "name": "gfddgfgf",
+      "surname": "Smolskiy",
+      "date": "31.12.3000",
+      "position": "Senior Software Engineer",
+      "salary": "2000",
+      "id": "8957233a-8f3b-48c7-b2a4-5d759f803126"
+    },
+    {
+      "name": "gfddgfgf",
+      "surname": "Smolskiy",
+      "date": "31.12.3000",
+      "position": "Senior Software Engineer",
+      "salary": "2000",
+      "id": "ad4790e7-5a9e-4975-9cc4-466b3be95f77"
+    },
+    {
+      "name": "gfddgfgf",
+      "surname": "Smolskiy",
+      "date": "31.12.3000",
+      "position": "Senior Software Engineer",
+      "salary": "2000",
+      "id": "c0da9aa1-4164-46fc-a623-85ee86c366ab"
+    }
+  ],
+  "users": [
+    {
+      "username": "user",
+      "password": "$2b$10$5iCn1hKF9KjU4jP9Ygm20Oas0/5fiV0oXQTDWi/n4Jf6JTkj1k/4u",
+      "id": "f1168858-9d04-44d0-990d-34e3a524020c"
+    }
+  ]
 }
