@@ -1,10 +1,12 @@
 const express = require('express');
 require('express-async-errors');
 const app = express();
+const cors = require('cors');
 const {path, hostname, port} = require('./configuration/config');
 const routes = require('./routes');
 const Boom = require('@hapi/boom');
 
+app.use(cors());
 app.use(express.json());
 app.use(path, routes);
 

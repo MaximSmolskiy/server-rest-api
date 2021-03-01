@@ -21,7 +21,8 @@ const employeeSchema = Joi.object({
 			'Junior Software Engineer',
 			'Software Engineer',
 			'Senior Software Engineer',
-			'Lead Software Engineer'),
+			'Lead Software Engineer')
+		.required(),
 	salary: Joi
 		.number()
 		.required()
