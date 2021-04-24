@@ -7,8 +7,8 @@ class EmployeesService {
 		return db.then(db => db
 			.get('employees')
 			.filter(employee => {
-				const isEqual = (filter, employee) => !filter || filter.toLowerCase() === employee.toLowerCase();
-				return isEqual(filters.name, employee.name) && isEqual(filters.surname, employee.surname);
+				const includes = (employee, filter) => !filter || employee.toLowerCase().includes(filter.toLowerCase());
+				return includes(employee.name, filters.name) && includes(employee.surname, filters.surname);
 			})
 			.orderBy(sortField, sortOrder)
 			.drop((page - 1) * pageSize)
