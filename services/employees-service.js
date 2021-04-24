@@ -4,16 +4,22 @@ const Boom = require('@hapi/boom');
 
 class EmployeesService {
 	async getEmployeesList(filters, sortOrder, page) {
-		return db.then(db => db
+		const filteredEmployeesList = await db.then(db => db
 			.get('employees')
 			.filter(employee => {
 				const includes = (employee, filter) => !filter || employee.toLowerCase().includes(filter.toLowerCase());
 				return includes(employee.name, filters.name) && includes(employee.surname, filters.surname);
-			})
+			}));
+		const employeesNumber = filteredEmployeesList
+			.size()
+			.value();
+		const pagesNumber = (employeesNumber + pageSize - 1) / pageSize;
+		const employeesList = filteredEmployeesList
 			.orderBy(sortField, sortOrder)
 			.drop((page - 1) * pageSize)
 			.take(pageSize)
-			.value());
+			.value();
+		return {pagesNumber, employeesList};
 	}
 
 	async saveEmployee(employee) {
