@@ -13,7 +13,7 @@ class EmployeesService {
 		const employeesNumber = filteredEmployeesList
 			.size()
 			.value();
-		const pagesNumber = (employeesNumber + pageSize - 1) / pageSize;
+		const pagesNumber = Math.ceil(employeesNumber / pageSize);
 		const employeesList = filteredEmployeesList
 			.orderBy(sortField, sortOrder)
 			.drop((page - 1) * pageSize)
